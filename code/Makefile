@@ -1,6 +1,6 @@
-CC=gcc
-CCFLAGS= -Wall -Werror -g
-LIBFLAGS= -lm -pg
+CC=gcc -pg
+CCFLAGS= -Wall -Werror -g -pg
+LIBFLAGS= -lm
 SRC= $(wildcard *.c)
 OBJ= $(SRC:.c=.o)
 EXEC= exec
